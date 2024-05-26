@@ -16,7 +16,7 @@ def create_feature_vectors():
                "Label"]
     df = pd.DataFrame(columns=columns)
     for label in ["positive", "negative"]:
-        image_files = glob.glob(f"Data/{label}s/*.png")
+        image_files = glob.glob(f"Data/{label}/*.png")
         for image_file in image_files:
             img = mpimg.imread(image_file)
             # calculate min, max and mean of the three color components r, g, b.

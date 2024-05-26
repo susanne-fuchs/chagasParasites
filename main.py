@@ -1,6 +1,6 @@
 from preprocessing import create_feature_vectors
 from explore import explore
-from neural_networks import create_train_and_test_datasets
+from neural_networks import create_datasets_and_train_model
 
 
 if __name__ == '__main__':
@@ -11,4 +11,4 @@ if __name__ == '__main__':
     # Therefore, I include
     # R_min, G_min, R_max, G_max, B_max, R_mean, G_mean and B_mean
     # in the feature vector.
-    create_train_and_test_datasets()
+    create_datasets_and_train_model()
